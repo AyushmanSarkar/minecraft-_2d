@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MINECRAFT</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Luxurious+Roman&family=Raleway&display=swap" rel="stylesheet">
+
+
+
+<body class="body_background" onload="warning()">
+
+  </script>
+	<center>
+
+	<h2 onclick="Keybind()">MINECRAFT</h2>
+
+	<label class="switch">
+		<input type="checkbox" id="switch" onclick="Keybinds()">
+		<span class="slider"></span>
+	  </label>
+
+	<p id="keybinds">
+		Use arrow keys to move <br>
+		W ➛ brick wall <br>
+		R ➛ place netherrack <br>
+		C ➛ place stone <br>
+		D ➛ dark prismarine <br>
+		G ➛ grass block <br>
+		L ➛ emerald block <br>
+		U ➛ glowstone <br>
+		Y ➛ yellow wool <br>
+		T ➛ oak log <br>
+		Shift + P ➛ Increase block size <br>
+		Shift + M ➛ Decrease block size <br>
+	</p>
+
+	<div id="head_info" >
+		<h3>Current Width  = <span id="current_width">30</span></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h3>Current Height  = <span id="current_height">30</span></h3>
+	</div>
+	<canvas id="myCanvas" width="1000" height="600"></canvas>
+	<br>
+	<button class="button" onclick="clearArea()" id="clear">Clear Area</button>
+
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
